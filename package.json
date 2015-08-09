@@ -4,8 +4,9 @@
   "description": "A simple github repo tagger.",
   "main": "index.js",
   "scripts": {
-    "prebuild": "rm -rf public",
+    "prebuild": "npm run clean",
     "build": "NODE_ENV=production webpack",
+    "clean": "rm -rf public",
     "deploy": "surge -p public -d hjs-gittagger.surge.sh",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
