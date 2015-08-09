@@ -1,0 +1,23 @@
+{
+  "name": "hjs-gittagger",
+  "version": "0.1.0",
+  "description": "A simple github repo tagger.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "surge -p public -d hjs-gittagger.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekydatamonkey/hjs-gittagger.git"
+  },
+  "author": "James Johnson <james_johnson@mcad.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geekydatamonkey/hjs-gittagger/issues"
+  },
+  "homepage": "https://github.com/geekydatamonkey/hjs-gittagger#readme",
+  "dependencies": {
+    "surge": "^0.14.3"
+  }
+}
