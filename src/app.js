@@ -1,10 +1,21 @@
 'use strict';
 
-import React from 'react';
-import Hello from './Hello/Hello';
-
 // styles
-import stylesYeti from 'yeticss/public/css/main.css';
-import stylesApp from './app.scss';
+import yetiStyles from 'yeticss/public/css/main.css';
+import appStyles from './app.scss';
 
-React.render(<Hello name='World' code="function() {}" />, document.body);
+// scripts
+import app from 'ampersand-app';
+import Router from './router';
+
+// expose `app` to browser console
+window.app = app;
+
+app.extend({
+  init() {
+    this.router = new Router();
+    this.router.history.start();
+  },
+});
+
+app.init();
