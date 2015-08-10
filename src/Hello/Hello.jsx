@@ -1,13 +1,15 @@
 import React from 'react';
 
 // styles
-require('./hello.css');
+require('./hello.scss');
 
 export default React.createClass({
   displayName: 'Hello',
   render: function() {
     return (
-      <h1 className='hello'>Hello there, {this.props.name}!</h1>
+      <section className='hello container'>
+        <h1>Hello there, {this.props.name}!</h1>
+      </section>
     );
   }
 });
