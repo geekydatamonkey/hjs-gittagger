@@ -1,7 +1,7 @@
 'use strict';
 
 // styles
-import yetiStyles from 'yeticss/public/css/main.css';
+import yetiStyles from 'yeticss/public/css/main.min.css';
 import appStyles from './app.scss';
 
 // scripts

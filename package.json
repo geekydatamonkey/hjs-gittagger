@@ -9,6 +9,7 @@
     "clean": "rm -rf public",
     "deploy": "surge -p public -d hjs-gittagger.surge.sh",
     "start": "webpack-dev-server",
+    "serve": "npm run build && http-server ./public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "yolo": "npm run build && npm run deploy"
   },
@@ -45,6 +46,7 @@
     "yeticss": "^7.0.3"
   },
   "devDependencies": {
+    "http-server": "^0.8.0",
     "node-sass": "^3.2.0",
     "sass-loader": "^2.0.0"
   }
